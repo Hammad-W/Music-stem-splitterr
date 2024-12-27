@@ -1,15 +1,19 @@
 # Music-stem-splitterr
-Music Stem Splitter Documentation
-Problem Statement
-The separation of mixed music into its constituent components (stems) is a fundamental challenge in music production and audio processing. Professional music producers often need isolated tracks for remixing, remastering, or educational purposes. Traditional methods of obtaining stems require access to original multitrack recordings, which are rarely available. This project aims to solve this problem by implementing an automated system that can separate mixed music into individual stems (vocals, drums, bass, and other instruments) using deep learning.
-Methodology
-Machine Learning Approach
+<h1>Music Stem Splitter Documentation<h1></h1>
+<h2>Problem Statement</h2>
+<p>The separation of mixed music into its constituent components (stems) is a fundamental challenge in music production and audio processing. Professional music producers often need isolated tracks for remixing, remastering, or educational purposes. Traditional methods of obtaining stems require access to original multitrack recordings, which are rarely available. This project aims to solve this problem by implementing an automated system that can separate mixed music into individual stems (vocals, drums, bass, and other instruments) using deep learning.</p>
+<h2>Methodology</h2>
+<h3>Machine Learning Approach</h3>
+  
 We chose the Demucs (Deep Extractor for Music Sources) model developed by Facebook Research for this project. Here's why:
-Architecture Justification:
-Demucs uses a hybrid approach combining U-Net architecture with bidirectional LSTM.
-Performs in both time and frequency domains for better separation.
-Demonstrates superior performance in multiple source separation benchmarks.
-Handles real-time processing efficiently.
+
+<li>
+  <ol>>Architecture Justification:</ol
+<ul>Demucs uses a hybrid approach combining U-Net architecture with bidirectional LSTM.</ul>
+<ul>Performs in both time and frequency domains for better separation.</ul>
+<ul>Demonstrates superior performance in multiple source separation benchmarks.</ul>
+<ul>Handles real-time processing efficiently.
+  </li>
 Technical Specifications:
 Input: Mixed audio signal (stereo/mono).
 Output: Separated stems (vocals, drums, bass, other).
